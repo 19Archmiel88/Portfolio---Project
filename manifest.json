@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio Artur Wiśniewski",
+  "short_name": "Portfolio",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#754ef9",
+  "icons": [
+    {
+      "src": "images/Artur Wiśniewski.webp",
+      "sizes": "192x192",
+      "type": "webp",
+      "purpose": "any"
+    },
+    {
+      "src": "images/Artur Wiśniewski.webp",
+      "sizes": "512x512",
+      "type": "webp",
+      "purpose": "any"
+    }
+  ],
+  "splash_screen": null,
+  "prefer_related_applications": false
+}

@@ -48,3 +48,13 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .contact form' , { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img img' , { origin: 'left'});
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content' , { origin: 'right'});
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
